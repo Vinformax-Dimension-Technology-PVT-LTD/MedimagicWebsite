@@ -1,0 +1,172 @@
+.pricing-table {
+    width: 100%;
+    .flex {
+        //  @include flexbox();
+        &.table-body {
+            &:hover {
+                background: rgba($color: #43E0FF, $alpha: 0.1);
+            }
+         }
+        .flex-col {
+            flex: 1 1 25%;
+            padding: 20px;
+            border-right: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            text-align: center;
+            position: relative;
+            font-size: rem(16);
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+        &.table-heading {
+            .flex-col {
+                padding: 60px 20px 20px;
+            }
+            h2,
+            h3 {
+                margin: 0 0 24px;
+                text-align: center;
+            }
+            h3 {
+                font-size: rem(32);
+                font-weight: 700;
+            }
+            .old-price {
+                display: inline-block;
+                font-size: rem(24);
+                opacity: 0.8;
+            }
+            .price {
+                font-size: rem(64);
+                font-weight: 700;
+                line-height: 90%;
+                @include flexbox();
+                align-items: flex-end;
+                justify-content: center;
+                margin: 5px 0 30px;
+                .sub {
+                    font-size: 24px;
+                    line-height: 100%;
+                }
+            }
+            .btn-default {
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow: none;
+                padding: 12px;
+                text-align: center;
+            }
+            .badge {
+                background: #E0F4EC;
+                padding: 9px 12px;
+                color: #39B480;
+                border-right: 4px;
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 135px;
+                font-size: rem(16);
+            }
+        }
+    }
+}
+
+.tick-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #E0F4EC;
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: '';
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg id='Layer_1' fill='%2339B480' style='enable-background:new 0 0 50 50;' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1_1_'%3E%3Cpolygon points='47.293,6.94 14,40.232 2.707,28.94 1.293,30.353 14,43.06 48.707,8.353 '/%3E%3C/g%3E%3C/svg%3E");
+        width: 18px;
+        height: 18px;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+    .sslider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $brand-primary;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: $brand-primary;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px $brand-primary;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      .switch-cont {
+          .val {
+              padding: 0 10px;
+              font-size: 20px;
+              &.selected {
+                  color: #1A5AE2;
+              }
+          }
+      }
+      input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+  }
+  
+
+  
+  

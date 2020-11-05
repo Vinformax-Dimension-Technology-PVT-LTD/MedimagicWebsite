@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="26px" viewBox="0 0 25 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>video_icon@3x</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0_home_desktop---Version-1.2" transform="translate(-411.000000, -1106.000000)">
+            <g id="Group-20" transform="translate(145.000000, 609.000000)">
+                <g id="Group-15" transform="translate(80.000000, 193.000000)">
+                    <g id="Group-14" transform="translate(0.000000, 302.000000)">
+                        <g id="Group-5" transform="translate(187.000000, 3.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                            <g id="Group-7" transform="translate(1.000000, 1.500000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.39130435">
+                                <path d="M14.3876174,20.7649391 C13.2397913,21.1842783 12.0001391,21.4138435 10.7069217,21.4138435 C4.79332174,21.4138435 3.39824787e-15,16.6205217 3.39824787e-15,10.7069217 C3.39824787e-15,4.79332174 4.79332174,5.77702137e-14 10.7069217,5.77702137e-14 C16.6205217,5.77702137e-14 21.4138435,4.79332174 21.4138435,10.7069217 C21.4138435,11.9129043 21.214887,13.0729739 20.8475826,14.1549913" id="Stroke-1"></path>
+                                <polyline id="Stroke-3" points="7.84378435 8.68812522 7.84378435 5.70530783 12.0815583 8.3223513 16.3178017 10.9393948 12.0815583 13.5579687 7.84378435 16.1750122 7.84378435 13.3651339"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

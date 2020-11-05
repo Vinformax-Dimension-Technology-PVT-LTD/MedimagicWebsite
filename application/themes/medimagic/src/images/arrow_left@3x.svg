@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_left@3x</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="1.0_home_desktop---Version-1.2" transform="translate(-228.000000, -3396.000000)">
+            <g id="arrow_left" transform="translate(259.000000, 3427.000000) scale(-1, 1) translate(-259.000000, -3427.000000) translate(228.000000, 3396.000000)">
+                <circle id="Oval" stroke="#43E0FF" fill="#FFFFFF" cx="31" cy="31" r="30.5"></circle>
+                <path d="M36.4303286,42.7322523 L25.264284,31.6323458 C24.9119053,31.2820987 24.9119053,30.7181035 25.264284,30.3678564 L36.4303286,19.2679499 C36.7865291,18.9132029 37.367457,18.9109529 37.7274794,19.2597 C38.0875018,19.6091971 38.0913237,20.1784423 37.7358875,20.5324393 L27.2065703,31.0001011 L37.7358875,41.4677629 C38.0913237,41.8217599 38.0875018,42.3910051 37.7274794,42.7405022 C37.5486148,42.9137507 37.3162436,43 37.0831081,43 C36.8461507,43 36.6099577,42.9107508 36.4303286,42.7322523 Z" id="Icon" fill="#262454" transform="translate(31.500000, 31.000000) scale(-1, 1) translate(-31.500000, -31.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

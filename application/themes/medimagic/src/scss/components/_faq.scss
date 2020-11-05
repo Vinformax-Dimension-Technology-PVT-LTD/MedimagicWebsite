@@ -1,0 +1,40 @@
+.faqs {
+    .faqs-card {
+        border-bottom: 1px solid #D8D8D8;
+        padding: 30px 15px;
+        .faqs-title {
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                width: 16px;
+                height: 16px;
+                border-right: 2px solid #262454;
+                border-bottom: 2px solid #262454;
+                position: absolute;
+                right: 10px;
+                content: " ";
+                top: 17px;
+                transform: rotate(45deg);
+                transition: all 0.2s ease-in-out;
+              }
+              &.active {
+              color: $brand-primary;
+              &::after {
+                transform: rotate(225deg);
+                transition: all 0.2s ease-in-out;
+                border-right: 2px solid #1A5AE2;
+                border-bottom: 2px solid #1A5AE2;
+              }
+            }
+        }
+        .faqs-panel {
+            display: none;
+            margin: 0;
+            text-align: left;
+            font-size: rem(18);
+            padding-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+
+
+.header {
+    padding: 35px 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    @include breakpoint(767){
+        padding: 25px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
+    .container {
+        max-width: 1240px;
+    }
+    &.h-out {
+        transform: translateY(-100%);
+        transition: transform 400ms ease-in-out;
+    }
+}
+.menu-button {
+    position: absolute;
+    z-index: 900;
+    right: 20px;
+    top: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    .menu-button-line {
+        height: 2px;
+        width: 30px;
+        margin-bottom: 5px;
+        background: #262454;
+        transition: 0.9s;
+      }
+      &.close {
+        transform: rotate(180deg);
+        transition: 0.4s;
+      }
+      &.close .menu-button-line:nth-child(1) {
+        background: #262454;
+      
+        
+        transform: rotate(45deg) translate(5px, 3px);
+        transition: 0.8s;
+      }
+      &.close .menu-button-line:nth-child(2) {
+        opacity: 0;
+      }
+      &.close .menu-button-line:nth-child(3) {
+        background: #262454;
+        transform: rotate(-45deg) translate(8px, -6px);
+        transition: 0.8s;
+      }
+  }
+  
+ul.nav {
+    padding: 0;
+    margin: 0;
+    @include min-breakpoint(768){
+        @include flexbox();
+        @include justify-content(center);
+    }
+    @include breakpoint(767){
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: calc(100% - 87px);
+        top: 87px;
+        left: 0;
+        background: #ffffff;
+        transition: transform 300ms $transitionEffect;
+        transform: translateX(100%);
+        z-index: 10;
+    }
+    &.show {
+        @include breakpoint(767){
+            transform: translateX(0);
+        }
+    }
+    li {
+        @include min-breakpoint(768){
+            padding-right: 24px;
+            flex: 0 0 auto;
+        }
+        @include breakpoint(767){
+            padding: 10px 20px;
+        }
+        list-style: none;
+        &:last-child {
+            padding-right: 0;
+        }
+        a {
+            display: block;
+            color: $color-black;
+            font-size: em(16);
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            @include breakpoint(767){
+                display: inline-block;
+                font-size: em(24);
+            }
+            &::after {
+                content: '';
+                width: 0;
+                height: 6px;
+                background: $brand-secondary;
+                position: absolute;
+                left: 15%;
+                bottom: 6px;
+                transition: all 500ms $transitionEffect;
+                z-index: -1;
+            }
+            &:hover, &:focus, &.nav-selected {
+                text-decoration: none;
+                &::after {
+                    width: 85%;
+                }
+            }
+
+        }
+    }
+}
+
+.menu-right {
+    padding: 0;
+    margin: 0;
+    @include flexbox();
+    @include justify-content(flex-end);
+    @include breakpoint(767){
+        display: none;
+    }
+    li {
+        padding-right: 24px;
+        flex: 0 0 auto;
+        list-style: none;
+        &:last-child {
+            padding-right: 0;
+        }
+        a{
+            
+            display: block;
+            color: $color-black;
+            font-size: em(16);
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            &::after {
+                content: '';
+                width: 0;
+                height: 6px;
+                background: $brand-secondary;
+                position: absolute;
+                left: 15%;
+                bottom: 6px;
+                transition: all 500ms $transitionEffect;
+                z-index: -1;
+            }
+            &:hover, &:focus {
+                text-decoration: none;
+                &::after {
+                    width: 85%;
+                }
+            }
+
+            &.btn-primary {
+                min-width: 142px;
+                height: auto;
+                padding: 13px 19px;
+                font-size: rem(14);
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.visible-xs {
+    display: none;
+    @include breakpoint(767) {
+        display: block;
+    }
+}
+
+.float-logo {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 35px 0;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    &.active {
+        opacity: 1;
+    }
+    .container {
+        max-width: 1240px;
+    }
+} 

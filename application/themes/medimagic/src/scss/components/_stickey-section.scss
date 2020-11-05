@@ -1,0 +1,94 @@
+
+.stickey-section, .pricing-section {
+    position: relative;
+    // background: url(../images/3dimg.png) right 100px no-repeat;
+    // background-attachment: fixed;
+    // background-size: 544px 556px;
+    .d3dpin {
+        position: absolute;
+        right:0;
+        top: 100px;
+        width: 544px;
+        height: 556px;
+    }
+    .xmls {
+        position: absolute;
+        left:0;
+        top: 100px;
+        width: 640px;
+        height: 424px;
+    }
+    .stickey-nav, .ps-nav {
+        padding: 42px 0 19px;
+        border-bottom: 1px solid #E4E4E9;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        h5 {
+            font-size: rem(20);
+            display: inline-block;
+            margin: 0;
+        }
+        ul {
+            float: right;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin: 0;
+                a {
+                    color: $color-black;
+                    font-size: rem(16);
+                    padding: 7px 15px;
+                    border-radius: 18px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                &.active {
+                    a {
+                        background: $brand-secondary;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .s-content {
+        padding-top: 100px;
+        position: relative;
+        h4 {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: rem(18);
+        }
+        h2 {
+            margin-top: 10px;
+        }
+    }
+}
+
+.animate-video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: all 500ms ease;
+    transform: scale(0.5);
+    right: 0;
+    top: 50px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.scrollmagic-pin-spacer {
+    .animate-video { 
+        transform: scale(0.5);
+        right: 0;
+        left: auto;
+    }
+}
+.mt-100 {
+    margin-top: 100px;
+}

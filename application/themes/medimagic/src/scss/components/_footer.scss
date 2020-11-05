@@ -1,0 +1,91 @@
+footer {
+    padding-top: 140px;
+    .foo-contact {
+        @include flexbox();
+        border-bottom: 1px solid #E4E4E9;
+        padding-bottom: 15px;
+        .fccol {
+            flex: 1 1 50%;
+            &.fc-title {
+                font-size: rem(52);
+                font-weight: 700;
+            }
+            &:last-child {
+                text-align: right;
+                a {
+                    font-size: rem(26);
+                    font-weight: 700;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
+        
+    }
+}
+.footer-container {
+    @include flexbox();
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .foo-col {
+        flex: 0 0 165px;
+        .footer-content {
+            p {
+                margin-top: 20px;
+                font-size: rem(16);
+            }
+            a {
+                font-size: rem(14);
+                display: inline-block;
+                margin-bottom: 1px;
+                &.lead {
+                    font-size: rem(18);
+                    margin-bottom: 20px;
+                    font-weight: 900;
+                }
+                &:hover {
+                    color: $color-black;
+                }
+            }
+            .social-icon {
+                margin-top: 30px;
+            }
+        }
+        ul.footer-nav {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                p {
+                    margin-top: 20px;
+                    font-size: 16px;
+                }
+                a {
+                    font-size: rem(14);
+                    display: inline-block;
+                    margin-bottom: 1px;
+                    &.lead {
+                        font-size: rem(18);
+                        margin-bottom: 20px;
+                        font-weight: 900;
+                    }
+                    &:hover {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        &:first-child {
+            flex: 0 0 395px;
+            @include min-breakpoint(993) {
+                padding-right: 156px;
+            }
+        }
+    }
+}
+.copytext {
+    padding: 25px 0;
+    border-top: 1px solid #E4E4E9;
+    font-size: 14px;
+}

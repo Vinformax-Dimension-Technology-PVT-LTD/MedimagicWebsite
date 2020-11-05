@@ -1,0 +1,88 @@
+%block-margins {
+  margin: 1em 0;
+}
+
+%heading-margins {
+  margin: 1em 0 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* headings */
+h1 {
+  font-size: rem(72);
+  line-height: rem(83);
+  font-weight: 700;
+  @extend %heading-margins;
+  @include breakpoint(767) {
+    font-size: rem(44);
+    line-height: rem(54);
+  }
+}
+h2 {
+  font-size: rem(52);
+  line-height: rem(65);
+  font-weight: 700;
+  @extend %heading-margins;
+  @include breakpoint(767) {
+    font-size: rem(38);
+    line-height: rem(50);
+  }
+}
+h3 {
+  font-size: rem(30);
+  font-weight: 500;
+  line-height: 1.3;
+}
+h4 {
+  font-size: rem(26);
+  line-height: 1.3;
+  @extend %heading-margins;
+}
+h5 {
+  font-size: rem(20);
+  line-height: 1;
+  @extend %heading-margins;
+}
+h6 {
+  font-size: rem(18);
+  line-height: 1;
+  @extend %heading-margins;
+}
+
+// Others
+p, ul, ol, pre {
+  @extend %block-margins;
+}
+
+p {
+  font-size: rem(18);
+  color: inherit;
+  line-height: rem(28);
+  &.lead {
+    font-size: rem(24);
+    color: inherit;
+    line-height: rem(34);
+  }
+}
+[role="heading"] {
+  position: relative;
+  display: inline-block;
+  span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 85%;
+      background: $brand-secondary;
+      bottom: 13px;
+      right: 0;
+      z-index: 1;
+  }
+}

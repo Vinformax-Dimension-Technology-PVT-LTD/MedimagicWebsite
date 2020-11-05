@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>video@3x</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0_home_desktop---Version-1.2" transform="translate(-802.000000, -2901.000000)">
+            <g id="Group-9" transform="translate(285.000000, 2840.000000)">
+                <g id="Group" transform="translate(493.000000, 0.000000)">
+                    <g id="video" transform="translate(24.000000, 61.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
+                        <polygon id="Stroke-1" stroke="#3072FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round" points="7.855 47.42 50.79 47.42 50.79 14 7.855 14"></polygon>
+                        <line x1="7.5" y1="64.6434" x2="29.5" y2="64.6434" id="Line" stroke="#43E0FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polyline id="Stroke-3" stroke="#43E0FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round" points="62.149 26.5685 72.849 21.0335 72.849 36.5935"></polyline>
+                        <polyline id="Stroke-4" stroke="#43E0FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round" points="62.149 36.6835 72.849 42.2185 72.849 36.5935"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,106 @@
+.hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 520px;
+    max-height: 100%;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    h1 {
+        padding: 0 0 40px;
+        margin: 0;
+        font-weight: 700;
+        color: $body-font-color;
+        position: relative;
+        span {
+            &::after {
+                content: '';
+                width: 305px;
+                height: 19px;
+                background: $brand-secondary;
+                position: absolute;
+                right: 60px;
+                bottom: 0px;
+                z-index: -1;
+            }
+        }
+    }
+    p {
+        font-size: rem(28);
+        margin: 0 0 42px;
+        font-weight: 400;
+        color: $body-font-color;
+    }
+
+    p{
+        .btn-primary {
+            margin-bottom: 20px;;
+        }
+        .btn-default {
+            margin-left: 20px;
+            box-shadow: none;
+            &:hover {
+                box-shadow: 0 12px 14px -4px #bdbdbd;
+            }
+        }
+    }
+
+}
+@keyframes jump {
+    0%   {transform: translate3d(0,0,0)}
+    40%  {transform: translate3d(0,10%,0);}
+    100% {transform: translate3d(0,20%,0)}
+  }
+.petel {
+    //transform-origin: 50% 50%;
+    //animation: jump .5s linear alternate infinite;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: $brand-secondary;
+    position: absolute;
+
+    &.petel-1 {
+        width: 35px;
+        height: 35px;
+        right: 300px;
+        top: 150px;
+    }
+    &.petel-2 {
+        background: #9070FE;
+        left: 200px;
+        top: 250px;
+    }
+    &.petel-3 {
+        background: #FE4A9E;
+        right: 200px;
+        top: 500px;
+    }
+    &.petel-4 {
+        left: 300px;
+        top: 400px;
+    }
+    &.petel-5 {
+        right: 300px;
+        top: 1100px;
+    }
+    &.petel-6 {
+        background: #FE4A9E;
+        left: 1000px;
+        top: 1600px;
+    }
+
+    &.petel-7 {
+        left: 300px;
+        top: 1400px;
+    }
+    &.petel-8 {
+        right: 300px;
+        top:2000px;
+    }
+    &.petel-9 {
+        background: #FE4A9E;
+        left: 1000px;
+        top: 2200px;
+    }
+}

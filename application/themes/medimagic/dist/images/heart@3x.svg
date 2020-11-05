@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>heart@3x</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0_home_desktop---Version-1.2" transform="translate(-309.000000, -2901.000000)">
+            <g id="Group-9" transform="translate(285.000000, 2840.000000)">
+                <g id="heart" transform="translate(24.000000, 61.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
+                    <path d="M23.7535,38.748 C26.8135,43.443 30.5735,47.668 35.1285,51.368" id="Stroke-1" stroke="#43E0FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M40.0425,24.1895 C40.0425,24.1895 36.6575,8.8795 21.9975,8.8795 C21.9975,8.8795 12.8275,8.0145 7.5275,16.8995 C4.8375,21.4095 4.2125,26.8445 5.5075,31.9345 C8.0375,41.8195 19.4525,57.8395 40.0425,72.6895" id="Stroke-3" stroke="#3072FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M40.0375,24.202 C40.0375,24.202 43.4225,8.902 58.0825,8.902 C58.0825,8.902 67.2475,8.037 72.5525,16.917 C75.2425,21.427 75.8675,26.857 74.5675,31.947 C73.5425,35.967 71.0375,41.007 67.0425,46.567" id="Stroke-5" stroke="#3072FF" stroke-width="7.715" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
